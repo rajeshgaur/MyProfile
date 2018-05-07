@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {Header} from './components/header'
+import {A} from './components/header'
 import './style.scss'
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <A />
     </div>
   );
 }

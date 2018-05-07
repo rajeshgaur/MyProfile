@@ -1,8 +1,15 @@
 import React from 'react'
+import { withState, compose, withHandlers } from 'recompose'
 import './style.scss'
 
 export const Header = () => (
     <div>
-        Baap ka bhi baap dfvddcd
+        <div>{this.state.name}</div>
     </div>
 )
+
+const headerEnhancer = compose(
+    withState('name', setName, 'rajesh')
+)
+
+export const A = headerEnhancer(Header)
